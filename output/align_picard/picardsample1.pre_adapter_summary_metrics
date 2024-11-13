@@ -1,0 +1,21 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectMultipleMetrics --INPUT /mnt/singularity-test-environment/input/240903_NB501792_0591_AHGMFGAFX7-47anthcof-240904T0700NA/ngs_pipeline_workdir/results/alignments/47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo.cram --OUTPUT /mnt/singularity-test-environment/output/align_picard/picardsample1 --PROGRAM CollectAlignmentSummaryMetrics --PROGRAM CollectInsertSizeMetrics --PROGRAM QualityScoreDistribution --PROGRAM MeanQualityByCycle --PROGRAM CollectBaseDistributionByCycle --PROGRAM CollectGcBiasMetrics --PROGRAM CollectSequencingArtifactMetrics --PROGRAM CollectQualityYieldMetrics --REFERENCE_SEQUENCE /mnt/singularity-test-environment/shared/resources/human_ref.fasta --ASSUME_SORTED true --STOP_AFTER 0 --METRIC_ACCUMULATION_LEVEL ALL_READS --INCLUDE_UNPAIRED false --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Tue Nov 12 13:17:27 GMT 2024
+
+## METRICS CLASS	picard.analysis.artifacts.SequencingArtifactMetrics$PreAdapterSummaryMetrics
+SAMPLE_ALIAS	LIBRARY	REF_BASE	ALT_BASE	TOTAL_QSCORE	WORST_CXT	WORST_CXT_QSCORE	WORST_PRE_CXT	WORST_PRE_CXT_QSCORE	WORST_POST_CXT	WORST_POST_CXT_QSCORE	ARTIFACT_NAME
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	A	C	100	GAT	52	AAN	100	NAT	56	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	A	G	53	CAT	47	CAN	52	NAT	48	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	A	T	100	CAT	50	CAN	56	NAA	100	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	C	A	53	CCA	50	CCN	51	NCA	52	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	C	G	50	ACT	46	ACN	48	NCT	48	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	C	T	100	CCC	48	ACN	100	NCT	53	Deamination
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	G	A	48	CGT	36	CGN	39	NGC	47	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	G	C	100	CGG	50	AGN	100	NGA	100	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	G	T	100	CGA	49	CGN	64	NGA	100	OxoG
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	T	A	51	GTA	44	GTN	48	NTA	45	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	T	C	100	CTA	49	CTN	57	NTA	100	NA
+47anthcof-110530629871-Normal_Blood_noinfo-BCM_v4_TwistUDI_X-240903_NB501792_AHGMFGAFX7-RHGM_LABKA_BCM-noinfo	X	T	G	56	CTT	49	CTN	52	NTT	53	NA
+
+
