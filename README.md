@@ -5,4 +5,4 @@ This work is created for Genomic Medicine of Region Hovedstaden by Simon Hansen,
 
 This is the repository containing the bash_scripts used for testing reproducability and portability of the new containerized Snakemake workflows. 
 
-Only some of the reference files are here, and the input/output files are excluded due to GDPR regulations and file sizes of said output. 
+Only some of the reference files are here, and the input files are excluded due to GDPR regulations along with most output files due to their size. 
