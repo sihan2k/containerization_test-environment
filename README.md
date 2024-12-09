@@ -1,7 +1,5 @@
 # Containerization test environment
 
-[[_TOC_]]
-
 ## Introduction
 This work is created for Genomic Medicine of Region Hovedstaden by Simon Hansen, in connection with a thesis project, and as an effort to complete the Containerization project. 
 
