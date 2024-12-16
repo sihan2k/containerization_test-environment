@@ -10,25 +10,8 @@ temp='/mnt/singularity-test-environment/temp/align_picard'
 log='/mnt/singularity-test-environment/logs/align_picard/log-file.txt'
 touch $log
 
-
-#Setup output files
-#touch /mnt/singularity-test-environment/output/align_picard/output.alignment_summary_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.insert_size_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.quality_distribution_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.quality_by_cycle_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.base_distribution_by_cycle_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.gc_bias.detail_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.gc_bias.summary_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.bait_bias_detail_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.bait_bias_summary_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.pre_adapter_detail_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.pre_adapter_summary_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.quality_yield_metrics;
-#touch /mnt/singularity-test-environment/output/align_picard/output.error_summary_metrics;
-
-
 #Singularity execution from align_picard shell command
-singularity exec --bind /mnt/singularity-test-environment/input/ --bind /mnt/singularity-test-environment/output/align_picard/ --bind /mnt/singularity-test-environment/shared/resources $gatk_sif \
+singularity exec --bind /mnt/singularity-test-environment $gatk_sif \
 	gatk --java-options "-Xmx15g" CollectMultipleMetrics \
              --INPUT $input \
              --REFERENCE_SEQUENCE $human_reference \

@@ -11,5 +11,5 @@ touch $log
 chmod 666 $log
 
 
-singularity exec --bind $input --bind $output $samtools_sif \
+singularity exec --bind /mnt/singularity-test-environment $samtools_sif \
 	samtools flagstat -@ 4 $input > $output 2> $log;

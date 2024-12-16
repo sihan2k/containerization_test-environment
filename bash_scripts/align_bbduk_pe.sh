@@ -12,10 +12,7 @@ bbmap_sif='/mnt/singularity-test-environment/siffolder/bbmap_38.63.sif'
 temp='/mnt/singularity-test-environment/temp/align_bbduk_pe'
 log='/mnt/singularity-test-environment/logs/align_bbduk_pe/log-file.txt'
 
-echo "Output1: $output1"
-echo "Output2: $output2"
-
-singularity exec --bind /mnt/singularity-test-environment/input/ --bind /mnt/singularity-test-environment/output/align_bbduk_pe --bind /mnt/singularity-test-environment/shared/resources $bbmap_sif \
+singularity exec --bind /mnt/singularity-test-environment $bbmap_sif \
 		 bbduk.sh t=10 in=$input1 in2=$input2 \
 		          qin=33 maxcalledquality=70 \
 		          ref=$trim_adapter ktrim=r k=23 mink=11 hdist=1 tpe=t tbo=t \

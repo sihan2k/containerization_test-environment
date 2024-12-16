@@ -12,6 +12,7 @@ temp='/mnt/singularity-test-environment/temp/star'
 log='/mnt/singularity-test-environment/logs/star/log-file.txt'
 ID:A01176_584_HHL2VDRX5_1 PL:ILLUMINA PU:HHL2VDRX5_1 LB:NA SM:81thitakf-110524631622-Tumor_Tissue_RNAlater-RNA_v1_ISTRNARZP_RHGMRNA01292-240821_A01176_BHHL2VDRX5-EXT_LABKA_NGCWGS-NGCWGS00903_GBM00903 CN:RH-GM
 
+#Temp folder NEEDS to not exist. Star creates this itself
 rm -rf $temp;
 
 singularity exec --bind /mnt/singularity-test-environment $star_sif \
